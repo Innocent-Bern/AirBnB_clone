@@ -1,0 +1,130 @@
+.places {
+    display: grid;
+    grid-template-areas:
+        "a a a a"
+        "b b c c"
+        "b b c c"
+        ". d d ."
+        ". d d .";
+}
+
+.places h1 {
+    grid-area: a;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.places article {
+    border-radius: 4px;
+    border: solid 1px #FF5A5F;
+    width: 390px;
+    padding: 20px;
+    margin: 20px;
+    display: grid;
+    grid-template-areas:
+        "e e e e f"
+        "g g g g g"
+        "h h h h h"
+        "i i i i i"
+        "j j j j j";
+    text-align: center;
+    gap: 10px;
+    position: relative;
+}
+
+.places article h2 {
+    font-size: 30px;
+    grid-area: e;
+}
+
+.places .home {
+    grid-area: b;
+}
+
+.places .house {
+    grid-area: c;
+}
+
+.places .suite {
+    grid-area: d;
+}
+
+.price_by_night {
+    color: #FF5A5F;
+    border: solid 4px #FF5A5F;
+    border-radius: 50%;
+    width: fit-content;
+    min-width: 60px;
+    height: 60px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: f;
+}
+
+.information {
+    height: 80px;
+    border-top: solid 1px #DDDDDD;
+    border-bottom: solid 1px #DDDDDD;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: g;
+}
+
+.max_guest {
+    background-image: url("../images/icon_group.png");
+}
+
+.number_rooms {
+    background-image: url("../images/icon_bed.png");
+}
+
+.number_bathrooms {
+    background-image: url("../images/icon_bath.png");
+}
+
+.max_guest,
+.number_rooms,
+.number_bathrooms {
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.user {
+    grid-area: h;
+    text-align: left;
+}
+
+.description {
+    grid-area: i;
+    text-align: left;
+}
+
+article .amenities {
+    grid-area: j;
+    width: 100%;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+}
+
+article .amenities h2 {
+    border-bottom: solid 1px #DDDDDD;
+    font-size: 16px;
+}
+
+article .amenities ul {
+    list-style: none;
+    /* background-image: url("../images/icon_pets.png"), url("../images/icon_tv.png"), url("../images/icon_wifi.png"); */
+    background-repeat: no-repeat;
+    background-position: left top, left center, left bottom;
+}
