@@ -22,7 +22,7 @@ class BaseModel:
 
     def save(self):
         """
-        updates the public instance attribute 
+        updates the public instance attribute
         updated at with the current datetime
         """
 
